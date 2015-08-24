@@ -57,8 +57,12 @@ URL: https://code.google.com/p/io-2012-slides
             <article><p data-config-presenter><!-- populated from slide_config.json --></p></article>
         </slide>
 
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             A G E N D A
+        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
         <!-- Chapter Cover +++ Agenda -->
-        <slide data-date class="fill nobackground" style="background-image: url(images/chapter-covers/agenda-2.jpg)">
+        <slide data-date class="fill nobackground" style="background-image: url(images/chapter-covers/agenda.jpg)">
             <hgroup class="new-chapter">
                 <h2>Agenda</h2>
             </hgroup>
@@ -187,10 +191,11 @@ URL: https://code.google.com/p/io-2012-slides
                                 <li><span class="small">Git's Index</span></li>
                                 <li><span class="small">Commits</span>
                                     <ul>
-                                        <li><span class="small">Inhalte erstellen und ändern</span></li>
-                                        <li><span class="small">Inhalte zum Index hinzufügen</span></li>
+                                        <li><span class="small">Inhalte erstellen</span></li>
+                                        <li><span class="small">Inhalte ändern</span></li>
+                                        <li><span class="small">Staging / Inhalte zum Index hinzufügen</span></li>
                                         <li><span class="small">Index-Reset / Inhalte aus dem Index löschen</span></li>
-                                        <li><span class="small">Symbolische Referenzen (<code>HEAD</code> etc.)</span></li>
+                                        <!--<li><span class="small">Symbolische Referenzen (<code>HEAD</code> etc.)</span></li>-->
                                     </ul>
                                 </li>
                                 <li><span class="small">Historie</span>
@@ -233,9 +238,149 @@ URL: https://code.google.com/p/io-2012-slides
         </slide>
 
         <!-- Pause 2 -->
-        <slide data-date class="fill nobackground" style="background-image: url(images/chapter-covers/pause-1.jpg)">
+        <slide data-date class="fill nobackground" style="background-image: url(images/chapter-covers/pause-2.jpg)">
             <hgroup>
                 <h2 class="white">10 Minuten Pause</h2>
+            </hgroup>
+        </slide>
+
+        <!-- Agenda - 1.4 (#1) Praktische Versionsverwaltung mit Git -->
+        <slide data-date>
+            <!-- Hidden speaker note element. Unveil pressing 'p'. Place above hgroup. -->
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>.ssh</li>
+                        <li>Danach: 10 Minuten Pause</li>
+                    </ul>
+                </section>
+            </aside>
+            <hgroup>
+                <h2>Agenda - 1.4 Praktische Versionsverwaltung mit Git (#1)</h2>
+            </hgroup>
+            <article class="smallerx">
+                <div class="smaller"><p><span class="small">Dauer: ca. 60 Minuten</span></p></div>
+                <div class="columns-2">
+                    <div>
+                    <ul class="build" style="-webkit-column-break-after: always">
+                        <li>
+                            <span><b>1.4.1 Referenzen: Branches &amp; Tags</b></span>
+                            <ul>
+                                <li><span class="small"><code>HEAD</code> und andere symbolische Referenzen</span></li>
+                                <li><span class="small">Branches verwalten</span>
+                                    <ul>
+                                        <li><span class="small">Branches wechseln: <code>git checkout</code></span></li>
+                                        <li><span class="small">Konventionen zur Benennung von Branches</span></li>
+                                        <li><span class="small">Gelöschte Branches und "verlorene" Commits</span></li>
+                                    </ul>
+                                </li>
+                                <li><span class="small">Tags - Wichtige Versionen markieren</span>
+                                    <ul>
+                                        <li><span class="small">Tags erstellen &amp; verwalten</span></li>
+                                        <li><span class="small">Lightweight-, Annotated- &amp; Signed-Tags</span></li>
+                                        <li><span class="small">Tags löschen &amp; überschreiben</span></li>
+                                        <li><span class="small">Commits korrekt beschreiben</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br>
+                    </ul>
+                    </div>
+                    <div>
+                    <ul class="build">
+                        <li>
+                            <span><b>1.4.2 Wiederherstellung von Versionen</b></span>
+                            <ul>
+                                <li><span class="small">Detached <code>HEAD</code></span></li>
+                                <li><span class="small">Commits rückgängig machen</span>
+                                    <ul>
+                                        <li><span class="small">Via <code>checkout</code></span></li>
+                                        <li><span class="small">Via <code>revert</code></span></li>
+                                        <li><span class="small">Via <code>reset</code></span></li>
+                                        <li><span class="small">Via <code>rebase</code></span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </article>
+        </slide>
+
+        <!-- Agenda - 1.4 (#2) Praktische Versionsverwaltung mit Git -->
+        <slide data-date>
+            <!-- Hidden speaker note element. Unveil pressing 'p'. Place above hgroup. -->
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>.ssh</li>
+                        <li>Danach: 10 Minuten Pause</li>
+                    </ul>
+                </section>
+            </aside>
+            <hgroup>
+                <h2>Agenda - 1.4 Praktische Versionsverwaltung mit Git (#2)</h2>
+            </hgroup>
+            <article class="smallerx">
+                <div class="smaller"><p><span class="small">Dauer: ca. 60 Minuten</span></p></div>
+                <div class="columns-2">
+                    <div>
+                    <ul class="build" style="-webkit-column-break-after: always">
+                        <li>
+                            <span><b>1.4.3 Versionen zusammenführen: Merging</b></span>
+                            <ul>
+                                <li><span class="small"><b>Zwei</b> Branches verschmelzen</span></li>
+                                <li><span class="small">Fast-Forward-Merges</span></li>
+                                <li><span class="small">3-Way-Merges</span></li>
+                                <li><span class="small">(Andere) Merge-Strategien</span></li>
+                                <li><span class="small">Optionen für die "recursive" Strategie</span></li>
+                            </ul>
+                        </li><br>
+                    </ul>
+                    </div>
+                    <div>
+                    <ul class="build">
+                        <li>
+                            <span><b>1.4.4 Merge-Konflikte lösen</b></span>
+                            <ul>
+                                <li><span class="small">Hilfe beim Mergen: Mergetools</span></li>
+                                <li><span class="small"><code>rerere</code>: "Reuse Recorded Resolution"</span></li>
+                                <li><span class="small">Konflikte vermeiden</span></li>
+                            </ul>
+                        </li><br>
+                        <li>
+                            <span><b>1.4.5 Einzelne Commits übernehmen</b></span>
+                            <ul>
+                                <li><span class="small">Cherry-Picking</span></li>
+                                <li><span class="small">Patching</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </article>
+        </slide>
+
+        <!-- Los geht's -->
+        <slide data-date class="fill nobackground" style="background-image: url(images/chapter-covers/los-gehts.jpg)">
+            <hgroup>
+                <h2 class="white">Los geht's</h2>
+            </hgroup>
+        </slide>
+
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             A G E N D A    E N D E
+        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             K A P I T E L    1    +++   I N T R O
+        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <!-- Chapter Cover +++ Kapitel 1 +++ Intro -->
+        <slide data-date class="fill nobackground" style="background-image: url(images/chapter-covers/agenda-2.jpg)">
+            <hgroup class="new-chapter">
+                <h2>Intro</h2>
             </hgroup>
         </slide>
 
