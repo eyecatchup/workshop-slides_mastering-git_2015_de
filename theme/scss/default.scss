@@ -896,6 +896,14 @@ article.smaller {
 span.small {
     font-size: 80%;
 }
+p.smaller,
+div.smaller,
+div.smaller p,
+span.smaller {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0;
+}
 
 .segue {
     padding: $slide-left-right-padding $slide-left-right-padding * 2;
