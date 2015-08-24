@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Mastering Git - Teil 1 (Basics)',
-    subtitle: 'Git Workshop - Von Stephan Schmitz, AOE GmbH',
+    title: '"Mastering Git"',
+    subtitle: 'Git Intensiv-Workshop @AOE - Teil 1 - Basics',
     date: '25.08.2015',
     //eventInfo: {
     //  title: 'Google I/O',
