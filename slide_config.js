@@ -1,9 +1,9 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'AOE HTML5 presentation slides',
-    subtitle: 'Super important subtitle',
-    date: '01.01.2000',
+    title: 'Mastering Git - Teil 1 (Basics)',
+    subtitle: 'Git Workshop - Von Stephan Schmitz, AOE GmbH',
+    date: '25.08.2015',
     //eventInfo: {
     //  title: 'Google I/O',
     //  date: '6/x/2013'
@@ -22,12 +22,12 @@ var SLIDE_CONFIG = {
 
   // Author information
   presenters: [{
-    name: 'Firstname Lastname',
+    name: 'Stephan Schmitz',
     company: 'Developer<br>AOE GmbH',
-    gplus: 'https://google.com/+YourVanityURL',
-    twitter: '@your-handle',
-    www: 'https://www.aoe.com',
-    github: 'https://github.com/AOEpeople'
+    gplus: 'https://google.com/+StephanSchmitz',
+    twitter: '@bext0n',
+    www: 'https://eyecatchup.github.io',
+    github: 'https://github.com/eyecatchup'
   }/*, {
     name: 'Second Name',
     company: 'Job Title, Google',
